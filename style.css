@@ -1,0 +1,325 @@
+
+* {
+    /* font-family: 'Playpen Sans', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+}
+
+.wrapper{
+    margin-top: 1em;
+    margin-right: auto; 
+    margin-bottom: 1em;
+    margin-left: auto;
+    max-width: 1200px;
+    padding: 1em;
+    box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.4);
+    border-color: gray;
+}
+.wrapper2{
+    margin-top: 1em;
+    margin-right: auto; 
+    margin-bottom: 1em;
+    margin-left: auto;
+    max-width: 1200px;
+    padding: 1em;
+    box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.4);
+    border-color: gray;
+
+    color: aliceblue;
+    background-color: rgb(46, 42, 42);
+}
+.wrapper3{
+    margin-top: 1em;
+    margin-right: auto; 
+    margin-bottom: 1em;
+    margin-left: auto;
+    max-width: 1200px;
+    padding: 1em;
+    box-shadow: 0px 0px 20px 5px rgba(128, 128, 128, 0.4);
+    border-color: gray;
+
+    color: aliceblue;
+    background-color: rgb(46, 42, 42);
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1em;
+}
+.left-side{
+    padding: 3em;
+    background-color: rgb(46, 42, 42);
+    color: white;
+    font-size: 14px;
+}
+.image{
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    clip-path: circle(50% at center);
+}
+.name{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    margin-top: 40px;
+}
+
+/* .left-side > hr {
+    color: rgb(0, 0, 0);
+} */
+.left-side hr{
+    height: 5px; /* กำหนดความหนา */
+    background-color: rgb(255, 255, 255); /* กำหนดสี */
+}
+.left-side > ul {
+    font-weight: 300;
+}
+
+
+.right-side{
+    /* padding: 2em; */
+    padding: 32px;
+    grid-template-rows: repeat(4 auto) 1fr;
+}
+.right-side > p{
+    text-align: justify;
+    /* font-weight: 300; */
+    font-size: 15px;
+}
+.right-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 0.5em;
+    padding-bottom: 20px;
+}
+
+.work{
+    font-size: 22px;
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: subgrid;
+}
+.position{
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: right;
+    /* grid-column-gap: 1em; */
+}
+.company{
+    margin-top: 15px;
+    font-weight: 600;
+}
+.date{
+    margin-top: 4px;
+    font-size: 12px;
+    text-align: right;
+}
+.desc{
+    margin-top: 3px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* -------------------------------- */
+
+.study{
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: subgrid;
+
+}
+.category{
+    text-align: right;
+    margin-top: 15px;
+    font-weight: 600;
+    
+}
+.school{
+    margin-top: 15px;
+    font-weight: 600;
+    
+}
+
+
+/* -------------------------------- */
+
+.left-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-column-gap: 1em;
+    grid-row-gap: 0.5em; */
+    margin-left: 10px;
+}
+
+.profile{
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: subgrid;
+}
+
+.pd{
+    margin-top: 8px;
+}
+.cm{
+    margin-top: 14px;
+}
+
+/* -------------------------------- */
+
+.flex{
+    display: flex;
+    gap: 16px;
+}
+.item{
+    padding: 6px 16px;
+    background-color: aqua;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+
+
+@media screen and (max-width:940px){
+    .main-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .left-grid{
+        grid-template-columns: 1fr 5fr;
+        margin-left: 0px;
+    }
+    .image{
+        width: 50%;
+        height: auto;
+        clip-path: circle(50% at center);
+        display: block; 
+        margin: 0 auto;
+    }  
+}
+@media screen and (max-width:700px){
+    .work{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .position{
+        text-align: center;
+    }
+    .date{
+        text-align: center;
+    }
+    .left-grid{
+        grid-template-columns: 1fr 2fr;
+        margin-left: 0px;
+    }
+
+    .study{
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+    }
+    .category{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:500px){
+    .left-grid{
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0px;
+    }
+    .desc{
+        font-size: 15px;
+    }
+}
+
+
+/* ---------------------------------------------------------------- */
+
+/* กำหนดขนาดตารางให้เหมาะสม */
+#sensorTable {
+    width: 60%; 
+    table-layout: fixed; 
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+@media screen and (max-width:886px){
+    #sensorTable{
+        font-size: 15px;
+        width: 75%;
+    }
+}
+@media screen and (max-width:621px){
+    #sensorTable{
+        font-size: 13px;
+        width: 90%;
+    }
+}
+@media screen and (max-width:443px){
+    #sensorTable{
+        font-size: 11px;
+        width: 100%;
+    }
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+.boxLoL{
+    margin-top: 2em;
+    margin-right: auto; 
+    margin-bottom: 2em;
+    margin-left: auto;
+    padding: 1em;
+
+    max-width: 800px;
+    background-color: beige;
+    color: black;
+    border-radius: 20px;
+}
+
+.flex-test01{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#flex-01{
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#flex-02{
+    flex-grow: 3;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.boxDota{
+    margin-right: auto; 
+    margin-bottom: 2em;
+    margin-left: auto;
+    padding: 1.5em;
+
+    max-width: 500px;
+    background-color: rgb(165, 150, 134);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.exampleJson{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+
