@@ -5,7 +5,7 @@ document.getElementById('GetDataButton').addEventListener('click', function() {
     
     if (!intervalId) {
         function fetchSensorData() {
-            fetch("http://206.189.146.138/api/sensors", {
+            fetch("https://206.189.146.138/api/sensors", {
                 method: 'GET'
             })
             .then(response => {
@@ -58,7 +58,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     const jsonData = document.getElementById('jsonPreview').value;
 
     // ส่งข้อมูลไปยัง API โดยใช้ method POST
-    fetch('http://206.189.146.138/api/students', {
+    fetch('https://206.189.146.138/api/students', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
