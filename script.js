@@ -5,7 +5,7 @@ document.getElementById('GetDataButton').addEventListener('click', function() {
     
     if (!intervalId) {
         function fetchSensorData() {
-            fetch("https://206.189.146.138/api/sensors", {
+            fetch("http://206.189.146.138/api/sensors", {
                 method: 'GET'
             })
             .then(response => {
