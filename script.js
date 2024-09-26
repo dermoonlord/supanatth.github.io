@@ -15,7 +15,8 @@ document.getElementById('GetDataButton').addEventListener('click', function() {
                 return response.json();
             })
             .then(data => {
-                document.getElementById('timestamp').textContent = data.timestamp;
+                date1 = new Date(data.timestamp);
+                document.getElementById('timestamp').textContent = date1.toLocaleString();
                 document.getElementById('temperature').textContent = data.temperature;
                 document.getElementById('humidity').textContent = data.humidity;
                 document.getElementById('luxsensor').textContent = data.luxsensor;
